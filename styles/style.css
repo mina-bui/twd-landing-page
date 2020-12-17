@@ -1,0 +1,243 @@
+@charset "utf-8";
+/*
+    author: mina bui
+	date: 2020-10-29
+	title: project 2 - landing page - css
+*/
+
+/*
+-----------------------
+    HTML selectors
+-----------------------
+*/
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+h1 {
+	font-size: 3.5em;
+	margin-bottom: 30px;
+}
+h2 {
+	font-size: 1.75em;
+	margin-top: 0px;
+}
+h1, h2, h3 {
+	text-transform: uppercase;	
+}
+body {
+    margin: 0;
+	background-color: white;
+	background-image: url("../images/wallpaper.jpg"); /* https://libreshot.com/minimalist-winter-tree/ */
+	background-size: cover;
+	background-position: center;
+    background-repeat: no-repeat;
+	background-attachment: fixed;
+	font-family: 'Quicksand', sans-serif;
+}
+nav {
+    /* dont show nav by default */
+    display: none;
+}
+header {
+	background-color: transparent;
+    color:black;
+    padding: 0px 10px 10px 10px;
+    z-index: 1;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+section {
+	margin-top: 40px;
+}
+footer {
+	padding: 20px;
+	position: sticky;
+	bottom: 0;
+	height: 2.5rem;
+	color: black;
+	width: 100%;
+	margin-bottom: 10px;
+	font-size: 12px;
+}
+a {
+	text-decoration: none;
+	text-transform: none;
+}
+a:link, a:visited {
+	color: black;
+}
+a:hover, a:active {
+	color: darkorange;
+}
+article {
+	width: 300px;
+	height: 100%;
+	margin-left: 10px;
+	margin-top: 50px;
+	margin-right: 50px;
+}
+article a {
+	margin-left: 10px;
+	font-weight: bold;
+}
+article p {
+	margin-left: 10px;
+	font-size: 13px;
+	font-weight: lighter;
+}
+
+/*
+-------------------------
+    .class selectors
+-------------------------
+*/
+.content-wrap {
+	max-width: 750px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 0px 30px 15px 30px;
+	background-color: rgba(255, 255, 255, 0.5);
+}
+.show header nav {
+	/* let javascript enable/disable this rule 
+	which will toggle display of the nav */
+    display: block;
+    width: 100%;
+}
+.header-link {
+    color: black;
+    text-decoration: none;
+}
+.btn-menu {
+    background-color: transparent;
+    color: black;    
+    border: none;
+    font-size: 1em;
+	font-family: 'Quicksand', sans-serif;
+    margin-right: 30px;
+    cursor: pointer;
+}
+.nav-a {
+    color: black;
+    text-decoration: none;
+    font-size: 0.90em;
+    line-height: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;    
+    display: block;
+    text-transform: uppercase;
+    text-align: center;
+}
+.nav-a:hover {
+    color: darkorange;
+}
+.main-heading {
+    margin-bottom: 0px;
+    line-height: 60px;
+    margin-left: 30px;
+}
+.two-col {
+	display: flex;
+	overflow: auto;	
+}
+.project-images {
+	width: 300px;
+	height: 100%;
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+.section-2, .section-3, .section-4 {
+	margin-top: 50px;
+}
+.container {
+    display: inline-block;
+	cursor: pointer;
+	padding-top: 50px;
+}
+/* making three bar menu button for mobile */
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+	transition: 0.4s;
+}
+/* rotate first bar */
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+/* fade out second bar */
+.change .bar2 {
+    opacity: 0;
+}
+/* rotate last bar */
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+/*
+-------------------------
+    #ID selectors
+-------------------------
+*/
+#top,
+#top footer {
+    display: flex;
+    justify-content: space-between;
+
+}
+#nav-ul {
+    list-style: none;
+    padding-left: 0px;
+    margin-bottom: 0px;
+}
+
+/*
+--------------------------
+    @media selectors
+--------------------------
+*/
+
+/* shows the nav when viewport gets 750px or wider */
+@media (min-width: 750px) {
+    nav {
+        display: block;
+    }
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+    article { 
+        margin: 20px;
+    }
+    .btn-menu {
+        display: none;
+    }
+    #nav-ul {
+        display: flex;
+    }
+}
+
+/* show projects as one column on mobile devices */
+@media only screen and (max-width: 750px) {
+	footer {
+		display: block;
+		text-align: center;
+	}
+	.content-wrap {
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+	.two-col {
+		display: block;
+	}
+}
