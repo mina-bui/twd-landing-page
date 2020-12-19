@@ -1,165 +1,256 @@
 <!DOCTYPE html>
-<html lang = "en">
-    <!-- 	author: mina bui
-			date: 2020-10-29
-			title: project 2 - landing page
-	-->
-    <head>
-        <meta charset = "utf-8">
-        <meta name = "viewport" content = "width=device-width, initial-scale=1">
-        <title>Mina Bui</title>
-        <!-- google fonts -->
-    	<link href = "https://fonts.googleapis.com/css?family=Quicksand" rel = "stylesheet">  
-        <!-- link to css -->
-        <link rel = "stylesheet" href = "styles/style.css">
-        <!-- favicons -->
-        <link rel="apple-touch-icon-precomposed" sizes="57x57" href="images/apple-touch-icon-57x57.png" />
-        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/apple-touch-icon-114x114.png" />
-        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/apple-touch-icon-72x72.png" />
-        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/apple-touch-icon-144x144.png" />
-        <link rel="apple-touch-icon-precomposed" sizes="60x60" href="images/apple-touch-icon-60x60.png" />
-        <link rel="apple-touch-icon-precomposed" sizes="120x120" href="images/apple-touch-icon-120x120.png" />
-        <link rel="apple-touch-icon-precomposed" sizes="76x76" href="images/apple-touch-icon-76x76.png" />
-        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="images/apple-touch-icon-152x152.png" />
-        <link rel="icon" type="image/png" href="images/favicon-196x196.png" sizes="196x196" />
-        <link rel="icon" type="image/png" href="images/favicon-96x96.png" sizes="96x96" />
-        <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
-        <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
-        <link rel="icon" type="image/png" href="images/favicon-128.png" sizes="128x128" />
-        <meta name="application-name" content="&nbsp;"/>
-        <meta name="msapplication-TileColor" content="#FFFFFF" />
-        <meta name="msapplication-TileImage" content="images/mstile-144x144.png" />
-        <meta name="msapplication-square70x70logo" content="images/mstile-70x70.png" />
-        <meta name="msapplication-square150x150logo" content="images/mstile-150x150.png" />
-        <meta name="msapplication-wide310x150logo" content="images/mstile-310x150.png" />
-        <meta name="msapplication-square310x310logo" content="images/mstile-310x310.png" />
-    </head>
-    <body>
-        <div class = "page-container">
-                <main>
-                <div class = "content-wrap">
-                    <!-- header -->
-                    <header class = "header" id ="myHeader">	
-                        <div id = "top">
-                            <div class = "btn-menu" title = "Menu">
-                                <div class="container" onclick="mobileMenu(this)">
-                                    <div class="bar1"></div>
-                                    <div class="bar2"></div>
-                                    <div class="bar3"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <nav>
-                            <ul id="nav-ul">
-                                <li class = "nav-li"><a class = "nav-a" href = "#sectionOne" title = "About">About</a></li>
-                                <li class = "nav-li"><a class = "nav-a" href = "#sectionThree" title = "Projects">Projects</a></li>
-                                <li class = "nav-li"><a class = "nav-a" href = "#sectionFour" title = "Contact">Contact</a></li>
-                            </ul>
-                        </nav>		
-                    </header>	
-                    <!-- Introduction -->
-                    <section class = "section-1" id = "sectionOne">
-                        <h1 class = "my-name">Mina Bui</h1>
-                        <h2>Front-End Developer & Designer <br> based in Vancouver, BC</h2>
-                        <p>
-                            Vancouver-based web developer and designer with a passion for UI/UX web design.
-                        </p>
-                    </section>
-                    <!-- Interests -->
-                    <section class = "section-2" id = "sectionTwo"> 
-                        <h3>Interests</h3>
-                        <ul>
-                            <li>Video Games</li>
-                            <li>Art</li>
-                            <li>Web Development</li>
-                            <li>Technology</li>
-                        </ul>
-                    </section>
-                    <!-- Links to Projects -->
-                    <section class = "section-3" id = "sectionThree">
-                        <h2>Projects</h2>
-                        <div class = "two-col">
-                            <article>
-                                <img src="images/japan-tours.png" alt = "Project image" class = "project-images"> 
-                                <a href="http://mbui.bcitwebdeveloper.ca/japan/index.html">JapanTours.com</a>
-                                <p>
-                                    HTML / CSS - Country Tourism Website
-                                </p>
-                            </article>
-                            <article>
-                                <img src="images/coming-soon.jpg" alt = "Project image" class = "project-images"> 
-                                <a href="#0">Business Brochure</a>
-                                <p>
-                                    HTML / CSS
-                                </p>
-                            </article>
-                        </div>
-                        <div class = "two-col">
-                            <article>
-                                <img src="images/coming-soon.jpg" alt = "Project image" class = "project-images"> 
-                                <a href="#0">Untitled Project</a>
-                                <p>
-                                    JavaScript > Level 01
-                                </p>
-                            </article>
-                            <article>
-                                <img src="images/coming-soon.jpg" alt = "Project image" class = "project-images"> 
-                                <a href="#0">Untitled Project</a>
-                                <p>
-                                    JavaScript > Level 02
-                                </p>                            
-                            </article>
-                        </div>
-                        <div class = "two-col">
-                            <article>
-                                <img src="images/coming-soon.jpg" alt = "Project image" class = "project-images"> 
-                                <a href="#0">Untitled Project</a>
-                                <p>
-                                    PHP
-                                </p>
-                            </article>
-                            <article>
-                                <img src="images/coming-soon.jpg" alt = "Project image" class = "project-images"> 
-                                <a href="#0">Untitled Project</a>
-                                <p>
-                                    WordPress
-                                </p>                            
-                            </article>
-                        </div>
-                        <div class = "two-col">
-                            <article>
-                                <img src="images/coming-soon.jpg" alt = "Project image" class = "project-images"> 
-                                <a href="#0">Untitled Project</a>
-                                <p>
-                                    External Client
-                                </p>                            
-                            </article>
-                            <article>
-                                <img src="images/coming-soon.jpg" alt = "Project image" class = "project-images"> 
-                                <a href="#0">Portfolio Site</a>
-                                <p>
-                                    Portfolio
-                                </p>
-                            </article>
-                        </div>
-                    </section>
-                    <!-- Contact -->
-                    <section class = "section-4" id = "sectionFour">
-                        <h2>Let's Stay In Touch</h2>
-                        <p>
-                            Want to work together? 
-                            Shoot me an email at <a href="mailto:mbui14@my.bcit.ca">mbui14 [ at ] my.bcit.ca</a> or 
-                            add me on <a href="https://www.linkedin.com/in/mina-bui/">Linkedin</a>.
-                        </p>
-                    </section>
+<html lang="en">
+<!-- 	author: mina bui
+        date: 2020-10-29
+        title: project 2 - landing page
+-->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mina Bui</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jura">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="images/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="images/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="images/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="images/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="images/apple-touch-icon-152x152.png" />
+    <link rel="icon" sizes="196x196" href="images/favicon-196x196.png" type="image/png" />
+    <link rel="icon" sizes="96x96" href="images/favicon-96x96.png" type="image/png" />
+    <link rel="icon" sizes="32x32" href="images/favicon-32x32.png" type="image/png" />
+    <link rel="icon" sizes="16x16" href="images/favicon-16x16.png" type="image/png" />
+    <link rel="icon" sizes="128x128" href="images/favicon-128.png" type="image/png" />
+    <meta name="application-name" content="&nbsp;" />
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="images/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="images/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="images/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="images/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="images/mstile-310x310.png" />
+</head>
+
+<body>
+    <main>
+        <!-- header -->
+        <header class="header">
+            <div id="top">
+                <div class="btn-menu" title="Menu">
+                    <div class="menu-container" onclick="mobileMenu(this)">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
                 </div>
-                </main>
-             <!-- Footer -->
-            <footer>
-                © Copyright 2020 Mina Bui.
-            </footer>
-        </div>
-            <!-- link to js -->
-            <script src="./scripts/script.js"></script>
-    </body>
+            </div>
+            <nav>
+                <ul id="nav-ul">
+                    <li class="nav-li"><a class="nav-a" href="#about" title="About">About</a></li>
+                    <li class="nav-li"><a class="nav-a" href="#projects" title="Projects">Projects</a></li>
+                    <li class="nav-li"><a class="nav-a" href="#contact" title="Contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- About -->
+        <section class="about" id="about">
+            <h1>Mina Bui</h1>
+            <h2>Front-End Developer</h2>
+            <br>
+            <a href="https://github.com/mina-bui" alt="Mina Bui's Github">
+                <img src="images/headshot.jpg" alt="Mina Bui's Headshot" title="Hey, I'm Mina!">
+            </a>
+            <div class="about-blurb">
+                <p>
+                    Your friendly neighbourhood web developer and designer. BCIT TWD student.
+                </p>
+                <p>
+                    Since I was young, I've always loved everything to do with technology: computers, the internet,
+                    video
+                    games, and
+                    the newest tech releases and everything in between.
+                </p>
+                <p>
+                    With web development, I combine my passion for helping others and for technology
+                    by creating usable, accessible and attractive interfaces and sites for all.
+                </p>
+                <p>
+                    On my off time, you can find me exploring Vancouver's hole in the wall restaurants, playing Animal
+                    Crossing well out of quarantine, or binge watching dramas while sipping on iced coffee.
+                </p>
+            </div>
+        </section>
+        <hr>
+        <!-- Projects -->
+        <section class="projects" id="projects">
+            <h2>Projects</h2>
+            <div class="projects-list" id="projects-list">
+                <h3>Main Projects</h3>
+                <ul>
+                    <li><a href="http://mbui.bcitwebdeveloper.ca/japan/index.html" title="Japan Tours"><b>Japan
+                                Tours</b></a></li>
+                    <ul>
+                        <li>Country Tourism Site</li>
+                        <li>Made with HTML, CSS</li>
+                    </ul>
+                    <br>
+                    <li><a href="https://github.com/mina-bui/twd-landing-page" title="TWD Landing Page"><b>Landing
+                                Page</b></a></li>
+                    <ul>
+                        <li>TWD Landing Page</li>
+                        <li>Made with HTML, CSS</li>
+                    </ul>
+                    <br>
+                    <li><a href="http://mbui.bcitwebdeveloper.ca/keep-it-cheesy/index.html"
+                            title="Keep It Cheesy Co."><b>Keep It Cheesy
+                                Co.</b></a></li>
+                    <ul>
+                        <li>Business Brochure Site</li>
+                        <li>Made with CSS, Sass (Gulp), node.js</li>
+                        <li><a href="https://github.com/v-nguyen6/HTML_CSS_P03_Business_Brochure"
+                                alt="Github Repo">Github Repo</a></li>
+                    </ul>
+                    <br>
+                    <li><a href="https://github.com/mina-bui/HTML_CSS_Vulcan_Project"
+                            title="Vulcan Engineering"><b>Vulcan Engineering</b></a></li>
+                    <ul>
+                        <li>Vulcan Engineering Site</li>
+                        <li>Made with CSS, Sass, node.js</li>
+                    </ul>
+                    <br>
+                    <li><a href="http://mbui.bcitwebdeveloper.ca/dino_dash/index.html" title="Dino Dash"><b>Dino
+                                Dash</b></a></li>
+                    <ul>
+                        <li>Dino Dash Game (based on Flappy Bird)</li>
+                        <li>Made with JavaScript, CSS</li>
+                        <li><a href="https://github.com/v-nguyen6/Javascript_Game_Assignment" alt="Github Repo">Github
+                                Repo</a></li>
+                    </ul>
+                    <br>
+                    <li><a href="https://github.com/mina-bui/php-project"
+                            title="PHP Student Database"><b>Database</b></a></li>
+                    <ul>
+                        <li>Student Database</li>
+                        <li>Made with PHP, mySQLi</li>
+                    </ul>
+                    <br>
+                    <li><a href="https://github.com/mina-bui/movie-app" title="Work in Progress...">Work in
+                            Progress...</a></li>
+                    <ul>
+                        <li>React Movie Database</li>
+                        <li>Made with JavaScript React</li>
+                    </ul>
+                    <br>
+
+                    <li><a href="#0" title="Work in Progress...">Work in Progress...</a></li>
+                    <ul>
+                        <li>WordPress Project</li>
+                    </ul>
+                    <br>
+                    <li><a href="#0" title="Work in Progress...">Work in Progress...</a></li>
+                    <ul>
+                        <li>External Client Project</li>
+                    </ul>
+                    <br>
+                    <li><a href="#0" title="Work in Progress...">Work in Progress...</a></li>
+                    <ul>
+                        <li>Portfolio Site</li>
+                    </ul>
+                    <br>
+                </ul>
+                <h3>Side Projects</h3>
+                <ul>
+                    <li><a href="https://github.com/mina-bui/xmas-card" title="Christmas Card"><b>2020 Virtual Christmas
+                                "Card"</b></a></li>
+                    <ul>
+                        <li>Made with HTML, CSS</li>
+                    </ul>
+                </ul>
+            </div>
+
+            <!-- <div class="two-col">
+                <article>
+                    <a href="http://mbui.bcitwebdeveloper.ca/japan/index.html">
+                        <img src="images/coming-soon.jpg" alt="Japan Tours site preview" title="Japan Tours"
+                            class="project-images">
+                    </a>
+                    <br>
+                    <a href="http://mbui.bcitwebdeveloper.ca/japan/index.html">Japan Tours</a>
+                    <p>HTML / CSS - Country Tourism Site</p>
+                </article>
+                <article>
+                    <a href="http://mbui.bcitwebdeveloper.ca/keep-it-cheesy/index.html">
+                        <img src="images/coming-soon.jpg" alt="Keep It Cheesy Co. site preview"
+                            title="Keep It Cheesy Co." class="project-images">
+                    </a>
+                    <br>
+                    <a href="http://mbui.bcitwebdeveloper.ca/keep-it-cheesy/index.html">Keep It Cheesy Co.</a>
+                    <p>HTML / CSS - Business Brochure Site</p>
+                </article>
+            </div>
+            <div class="two-col">
+                <article>
+                    <a href="http://mbui.bcitwebdeveloper.ca/dino_dash/index.html">
+                        <img src="images/coming-soon.jpg" alt="Dino Dash game preview" title="Dino Dash"
+                            class="project-images">
+                    </a>
+                    <br>
+                    <a href="http://mbui.bcitwebdeveloper.ca/dino_dash/index.html">Dino Dash</a>
+                    <p>JavaScript - Game</p>
+                </article>
+                <article>
+                    <img src="images/coming-soon.jpg" alt="Project image" class="project-images">
+                    <a href="#0">Movie App</a>
+                    <p>JavaScript React - Movie Site</p>
+                </article>
+            </div>
+            <div class="two-col">
+                <article>
+                    <img src="images/coming-soon.jpg" alt="Project image" class="project-images">
+                    <a href="#0">Untitled Project</a>
+                    <p>PHP</p>
+                </article>
+                <article>
+                    <img src="images/coming-soon.jpg" alt="Project image" class="project-images">
+                    <a href="#0">Untitled Project</a>
+                    <p>WordPress</p>
+                </article>
+            </div>
+            <div class="two-col">
+                <article>
+                    <img src="images/coming-soon.jpg" alt="Project image" class="project-images">
+                    <a href="#0">Untitled Project</a>
+                    <p>External Client</p>
+                </article>
+                <article>
+                    <img src="images/coming-soon.jpg" alt="Project image" class="project-images">
+                    <a href="#0">Portfolio Site</a>
+                    <p>Portfolio</p>
+                </article>
+            </div> -->
+        </section>
+        <hr>
+        <!-- Contact -->
+        <section class="contact" id="contact">
+            <h2>Let's Stay In Touch</h2>
+            <a href="https://github.com/mina-bui" alt="Github Icon" title="GitHub">
+                <img src="images/github.png">
+            </a>
+            <a href="https://www.linkedin.com/in/mina-bui/" alt="Linkedin Icon" title="Linkedin">
+                <img src="images/linkedin.png">
+            </a>
+            <a href="mailto:mbui14@my.bcit.ca" alt="Email Icon" title="Email"><img src="images/email.png">
+            </a>
+
+        </section>
+        <!-- Footer -->
+        <footer> © 2020 - Present Mina Bui. Made for <a href="https://bcitwebdeveloper.ca/" title="BCIT TWD Site">BCIT
+                TWD</a>.</footer>
+    </main>
+    <script src="./scripts/script.js"></script>
+    <script src="assets/js/index.js"></script>
+</body>
+
 </html>

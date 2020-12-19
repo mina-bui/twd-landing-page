@@ -6,44 +6,81 @@
 */
 
 /*
+https://colorpalettes.net/color-palette-4198/ 
+Celestial Color Palette
+Blue-Black      - #22272C
+Dark Blue       - #2A4158
+Light Blue      - #597387
+Light Grey      - #8C9EA3
+Muted Yellow    - #958A56
+*/
+
+/*
 -----------------------
     HTML selectors
 -----------------------
 */
 html {
     box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
 }
-*, *:before, *:after {
+*,
+*:before,
+*:after {
     box-sizing: inherit;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Jura";
+}
 h1 {
-	font-size: 3.5em;
-	margin-bottom: 30px;
+    font-size: 3.5em;
+    margin-top: 70px;
+    margin-bottom: 30px;
+    line-height: 5px;
 }
 h2 {
-	font-size: 1.75em;
-	margin-top: 0px;
-}
-h1, h2, h3 {
-	text-transform: uppercase;	
+    font-size: 1.75em;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
 }
 body {
-    margin: 0;
-	background-color: white;
-	background-image: url("../images/wallpaper.jpg"); /* https://libreshot.com/minimalist-winter-tree/ */
-	background-size: cover;
-	background-position: center;
+    background-image: linear-gradient(to bottom, #22272c, #2a4158);
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-	background-attachment: fixed;
-	font-family: 'Quicksand', sans-serif;
+    background-attachment: fixed;
+    font-family: "Calibri";
+    color: #181818;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px 0px 0px 0px;
+}
+main {
+    max-width: 750px;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0px 50px 15px 50px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 10px;
 }
 nav {
     /* dont show nav by default */
     display: none;
 }
 header {
-	background-color: transparent;
-    color:black;
+    background-color: transparent;
+    color: #181818;
     padding: 0px 10px 10px 10px;
     z-index: 1;
 }
@@ -52,127 +89,172 @@ img {
     height: auto;
 }
 section {
-	margin-top: 40px;
+    margin-top: 40px;
+}
+hr {
+    margin: 100px 250px 100px 250px;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
 footer {
-	padding: 20px;
-	position: sticky;
-	bottom: 0;
-	height: 2.5rem;
-	color: black;
-	width: 100%;
-	margin-bottom: 10px;
-	font-size: 12px;
+    padding: 100px 0px 30px 0px;
+    text-align: center;
+    height: 2.5rem;
+    color: #181818;
+    font-size: 0.9em;
 }
 a {
-	text-decoration: none;
-	text-transform: none;
+    text-decoration: none;
+    color: #597387;
 }
-a:link, a:visited {
-	color: black;
+a:link,
+a:visited {
+    color: #597387;
 }
-a:hover, a:active {
-	color: darkorange;
+a:hover,
+a:active {
+    color: #958a56;
+    text-decoration: underline;
+    transition: 0.4s;
 }
-article {
-	width: 300px;
-	height: 100%;
-	margin-left: 10px;
-	margin-top: 50px;
-	margin-right: 50px;
+p,
+li {
+    font-size: 1.1em;
+}
+/* article {
+    width: 300px;
+    height: 100%;
+}
+article img {
+    box-shadow: 5px 5px 5px darkgrey;
 }
 article a {
-	margin-left: 10px;
-	font-weight: bold;
+    font-weight: bold;
 }
 article p {
-	margin-left: 10px;
-	font-size: 13px;
-	font-weight: lighter;
+    font-size: 13px;
+    font-weight: lighter;
 }
-
+ */
 /*
 -------------------------
     .class selectors
 -------------------------
 */
-.content-wrap {
-	max-width: 750px;
-	margin-top: 0px;
-	margin-right: auto;
-	margin-left: auto;
-	padding: 0px 30px 15px 30px;
-	background-color: rgba(255, 255, 255, 0.5);
+
+.about {
+    text-align: center;
+}
+.about p {
+    text-align: left;
+    margin: 25px;
+}
+.about img {
+    float: left;
+    width: 200px;
+    height: 100%;
+    margin: 25px 30px 20px 25px;
+    box-shadow: 0 0 5px;
+    border-top: 10px solid white;
+    border-left: 10px solid white;
+    border-right: 10px solid white;
+    border-bottom: 40px solid white;
+    transform: rotate(358deg);
+}
+.about img:hover {
+    transform: rotate(1deg);
+}
+.about a:hover {
+    text-decoration: none;
+}
+.contact img:hover {
+    transform: rotate(5deg);
+}
+.contact a:hover {
+    text-decoration: none;
+}
+.contact h2 {
+    margin-bottom: 40px;
 }
 .show header nav {
-	/* let javascript enable/disable this rule 
+    /* let javascript enable/disable this rule 
 	which will toggle display of the nav */
     display: block;
     width: 100%;
 }
 .header-link {
-    color: black;
+    color: #181818;
     text-decoration: none;
 }
 .btn-menu {
     background-color: transparent;
-    color: black;    
+    color: #181818;
     border: none;
     font-size: 1em;
-	font-family: 'Quicksand', sans-serif;
-    margin-right: 30px;
+    font-family: "Quicksand", sans-serif;
+    padding-left: 290px;
     cursor: pointer;
 }
 .nav-a {
-    color: black;
+    color: #597387;
     text-decoration: none;
-    font-size: 0.90em;
+    font-size: 0.9em;
     line-height: 40px;
-    padding-left: 20px;
-    padding-right: 20px;
-    width: 100%;    
+    padding: 0px 20px 0px 20px;
+    width: 100%;
     display: block;
-    text-transform: uppercase;
     text-align: center;
+    font-weight: bold;
 }
 .nav-a:hover {
-    color: darkorange;
-}
-.main-heading {
-    margin-bottom: 0px;
-    line-height: 60px;
-    margin-left: 30px;
+    color: #958a56;
 }
 .two-col {
-	display: flex;
-	overflow: auto;	
+    display: flex;
+    overflow: auto;
+    margin: 0 auto;
+    padding: 0px;
 }
+
 .project-images {
-	width: 300px;
-	height: 100%;
-	margin-left: 10px;
-	margin-bottom: 10px;
+    width: 250px;
+    height: 100%;
+    margin-bottom: 10px;
 }
-.section-2, .section-3, .section-4 {
-	margin-top: 50px;
+.projects {
+    text-align: left;
+    margin: 0 auto;
+    padding: 0px 100px 0px 100px;
 }
-.container {
+.contact {
+    margin-top: 50px;
+    text-align: center;
+    padding: 0px;
+}
+.contact img {
+    width: 40px;
+    padding: 4px;
+}
+.menu-container {
     display: inline-block;
-	cursor: pointer;
-	padding-top: 50px;
+    cursor: pointer;
+    padding-top: 30px;
 }
 /* making three bar menu button for mobile */
-.bar1, .bar2, .bar3 {
+.bar1,
+.bar2,
+.bar3 {
     width: 35px;
     height: 5px;
     background-color: #333;
-    margin: 6px 0;
-	transition: 0.4s;
+    margin: 6px 0px;
+    transition: 0.4s;
 }
 /* rotate first bar */
 .change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
-    transform: rotate(-45deg) translate(-9px, 6px) ;
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
 }
 /* fade out second bar */
 .change .bar2 {
@@ -180,8 +262,89 @@ article p {
 }
 /* rotate last bar */
 .change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
-    transform: rotate(45deg) translate(-8px, -8px) ;
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+/* glowing star effect */
+/* credits: https://github.com/ZYallers/glowing-stars */
+.star {
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    position: fixed;
+    background-color: rgba(237, 205, 163, 0.8);
+    box-shadow: 0 0 40px 0 rgba(237, 205, 163, 0.8), 0 0 20px 0 #ffffff;
+    animation: glow 5s infinite;
+    z-index: -1;
+}
+
+.star--medium {
+    width: 6px;
+    height: 6px;
+    z-index: -1;
+}
+
+.star--big {
+    width: 9px;
+    height: 9px;
+    box-shadow: 0 0 40px 0 #edcda3, 0 0 20px 0 #ffffff, inset 0 0 4px #ffffff;
+    z-index: -1;
+}
+
+.comet {
+    width: 5px;
+    height: 5px;
+    background-color: rgba(255, 255, 255, 0.6);
+    /*box-shadow: 0 0 40px 0 #EDCDA3, 0 0 20px 0 #FFFFFF, inset 0 0 8px rgba(255, 255, 255, 0.6);*/
+    box-shadow: 0 0 7px 7px rgba(255, 255, 255, 0.3);
+    top: 0;
+    opacity: 0.3;
+    transform: rotate(-45deg) translate(0, -50px);
+    animation: comet 50s infinite;
+    z-index: -1;
+}
+
+.comet:after {
+    content: "";
+    width: 10vw;
+    height: 4px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 60px rgba(237, 205, 163, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+@keyframes glow {
+    0% {
+        opacity: 0.9;
+    }
+    50% {
+        opacity: 0.2;
+    }
+    100% {
+        opacity: 0.9;
+    }
+}
+
+@keyframes comet {
+    0% {
+        transform: rotate(-45deg) translateX(0);
+        opacity: 0.3;
+    }
+    10% {
+        opacity: 1;
+    }
+    20% {
+        transform: rotate(-45deg) translateX(-100vw);
+        opacity: 0;
+    }
+    100% {
+        transform: rotate(-45deg) translateX(-100vw);
+        opacity: 0;
+    }
 }
 
 /*
@@ -193,7 +356,6 @@ article p {
 #top footer {
     display: flex;
     justify-content: space-between;
-
 }
 #nav-ul {
     list-style: none;
@@ -216,28 +378,46 @@ article p {
         display: flex;
         justify-content: space-between;
     }
-    article { 
-        margin: 20px;
+    article {
+        margin: 20px 20px 20px 20px;
     }
     .btn-menu {
         display: none;
     }
     #nav-ul {
         display: flex;
+        margin-top: 30px;
+    }
+    hr {
+        margin: 100px 150px 100px 150px;
     }
 }
 
 /* show projects as one column on mobile devices */
 @media only screen and (max-width: 750px) {
-	footer {
-		display: block;
-		text-align: center;
-	}
-	.content-wrap {
-		margin-left: 10px;
-		margin-right: 10px;
-	}
-	.two-col {
-		display: block;
-	}
+    main {
+        margin: 0px 30px 0px 30px;
+    }
+    hr {
+        margin: 75px 75px 75px 75px;
+    }
+    footer {
+        display: block;
+        text-align: center;
+    }
+    .two-col {
+        display: block;
+    }
+    .about p {
+        margin: 25px 0px 25px 0px;
+    }
+    .about a {
+        text-align: center;
+    }
+    .about img {
+        float: none;
+    }
+    .projects {
+        padding: 0px 10px 0px 10px;
+    }
 }
