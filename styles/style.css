@@ -193,7 +193,6 @@ article p {
     border: none;
     font-size: 1em;
     font-family: "Quicksand", sans-serif;
-    padding-left: 290px;
     cursor: pointer;
 }
 .nav-a {
@@ -370,9 +369,10 @@ article p {
 */
 
 /* shows the nav when viewport gets 750px or wider */
-@media (min-width: 750px) {
+@media (min-width: 550px) {
     nav {
         display: block;
+        margin: 0 auto;
     }
     header {
         display: flex;
@@ -394,16 +394,26 @@ article p {
 }
 
 /* show projects as one column on mobile devices */
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 500px) {
     main {
         margin: 0px 30px 0px 30px;
+        padding: 0 30px 10px 30px;
+    }
+    h1 {
+        font-size: 2.5em;
     }
     hr {
         margin: 75px 75px 75px 75px;
     }
+    p,
+    li,
+    ul {
+        font-size: 1em;
+    }
     footer {
         display: block;
         text-align: center;
+        margin-bottom: 50px;
     }
     .two-col {
         display: block;
@@ -416,8 +426,13 @@ article p {
     }
     .about img {
         float: none;
+        width: 120px;
     }
     .projects {
         padding: 0px 10px 0px 10px;
+    }
+    .btn-menu {
+        display: flex;
+        margin-left: 90%;
     }
 }
