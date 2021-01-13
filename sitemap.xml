@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>http://mbui.bcitwebdeveloper.ca/</loc>
+  <lastmod>2021-01-13T23:38:47+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>http://mbui.bcitwebdeveloper.ca/japan/index.html</loc>
+  <lastmod>2020-10-17T01:15:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://mbui.bcitwebdeveloper.ca/brochure/index.html</loc>
+  <lastmod>2020-11-24T01:57:17+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://mbui.bcitwebdeveloper.ca/game/index.html</loc>
+  <lastmod>2020-12-12T01:20:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://mbui.bcitwebdeveloper.ca/christmas/card.html</loc>
+  <lastmod>2020-12-21T04:28:34+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://mbui.bcitwebdeveloper.ca/japan/destinations.html</loc>
+  <lastmod>2020-10-17T01:15:48+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://mbui.bcitwebdeveloper.ca/japan/things-to-do.html</loc>
+  <lastmod>2020-10-17T01:15:48+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://mbui.bcitwebdeveloper.ca/japan/booking.html</loc>
+  <lastmod>2020-10-17T01:15:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://mbui.bcitwebdeveloper.ca/japan/credits.html</loc>
+  <lastmod>2020-10-17T01:15:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://mbui.bcitwebdeveloper.ca/brochure/process.html</loc>
+  <lastmod>2020-11-24T01:57:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://mbui.bcitwebdeveloper.ca/brochure/about.html</loc>
+  <lastmod>2020-11-24T01:57:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://mbui.bcitwebdeveloper.ca/brochure/contact.html</loc>
+  <lastmod>2020-11-24T01:57:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>

@@ -1,0 +1,21 @@
+# robots.txt for Mina Bui's TWD file directory
+
+User-agent: *
+
+# This is irrelevant to my files, so it should not be crawled.
+Disallow: /cgi-bin/
+
+# This was a side project that I don't want to be a part of my main portfolio, so I don't want it to be crawled.
+Disallow: /christmas/
+
+# This is a side file in my Javascript game that I couldn't delete and so I don't want it to be crawled.
+Disallow: /game/images/_MACOSX/
+
+# This is a file intended for the developers and not for the public, so I don't want this to be crawled.
+Disallow: /vancouver/readme.html
+
+# This is a license file that is intended for the developers and not for the public, so this should not be crawled.
+Disallow: /vancouver/license.txt
+
+# This is a rubric file for my project and not for the public, so this should not be crawled.
+Disallow: /japan/p-01-country.pdf
