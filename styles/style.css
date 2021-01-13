@@ -436,5 +436,6 @@ article p {
     }
     .btn-menu {
         display: flex;
+        margin: 0 auto;
     }
 }
