@@ -435,7 +435,10 @@ article p {
         padding: 0px 10px 0px 10px;
     }
     .btn-menu {
+        display: none;
+    }
+    #nav-ul {
         display: flex;
-        margin: 0 auto;
+        margin-top: 30px;
     }
 }
