@@ -381,13 +381,13 @@ article p {
     article {
         margin: 20px 20px 20px 20px;
     }
-    .btn-menu {
+    /* .btn-menu {
         display: none;
     }
     #nav-ul {
         display: flex;
         margin-top: 30px;
-    }
+    } */
     hr {
         margin: 100px 150px 100px 150px;
     }
@@ -400,7 +400,7 @@ article p {
     }
     main {
         margin: 0px 30px 0px 30px;
-        padding: 0 30px 30px 30px;
+        padding: 0 30px 10px 30px;
     }
     h1 {
         font-size: 2.5em;
@@ -434,11 +434,11 @@ article p {
     .projects {
         padding: 0px 10px 0px 10px;
     }
-    .btn-menu {
-        display: none;
+    /*     .btn-menu {
+        margin: 0 auto;
     }
     #nav-ul {
         display: flex;
         margin-top: 30px;
-    }
+    } */
 }
