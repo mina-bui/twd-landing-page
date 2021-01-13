@@ -395,9 +395,12 @@ article p {
 
 /* show projects as one column on mobile devices */
 @media only screen and (max-width: 500px) {
+    header {
+        padding: 0px;
+    }
     main {
         margin: 0px 30px 0px 30px;
-        padding: 0 30px 10px 30px;
+        padding: 0 30px 30px 30px;
     }
     h1 {
         font-size: 2.5em;
@@ -433,6 +436,6 @@ article p {
     }
     .btn-menu {
         display: flex;
-        margin-left: 90%;
+        margin-left: auto;
     }
 }
