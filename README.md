@@ -1,4 +1,2 @@
-# twd-landing-page
-landing page for bcit twd 26. 
-
-Link to the live version (though this will be replaced with my Portfolio site later): http://mbui.bcitwebdeveloper.ca/
+# BCIT TWD Landing Page
+A landing page for BCIT TWD 26. Later replaced by my React.js portfolio site.
